@@ -12,6 +12,3 @@ int _abs(int i)
 	}
 	return (-i);
 }
-
-	
-
