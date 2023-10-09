@@ -18,6 +18,6 @@ int *array_range(int min, int max)
 	if (!ray)
 		return (0);
 	while (i <= max - min)
-		rau[i++] = d++;
+		ray[i++] = d++;
 	return (ray);
 }
