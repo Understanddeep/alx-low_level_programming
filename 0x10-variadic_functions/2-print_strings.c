@@ -12,7 +12,7 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int r;
+	unsigned int d;
 	char *k;
 	va_list theStrings;
 
@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		separator = "";
 	va_start(theStrings, n);
 
-	for (r = 0; r < n; d++)
+	for (d = 0; d < n; d++)
 	{
 		k = va_arg(theStrings, char *);
 
@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		printf("%s", k);
 
-		if (r < n - 1)
+		if (d < n - 1)
 		{
 			printf("%s", separator);
 		}
